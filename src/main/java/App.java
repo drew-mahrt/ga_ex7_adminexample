@@ -22,11 +22,11 @@ public class App
 		String signedIn = input.nextLine();
 
 
-		if (registered.equals("no")) //Check if registered is "no" or canceled is "yes"
+		if (registered.equals("no") || cancel.equals("yes")) //Check if registered is "no" or canceled is "yes"
 		{
 			System.out.println("go away");
 		}
-		else if (signedIn.equals("yes")) //Check if signedIn is "yes" and admin is "yes"
+		else if (signedIn.equals("yes") && admin.equals("yes")) //Check if signedIn is "yes" and admin is "yes"
 		{
 			System.out.println("you can see and change all the pages");
 		}
